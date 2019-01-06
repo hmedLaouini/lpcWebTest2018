@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,300');
+html,body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat' ,sans-serif;
+}
+.content {
+
+  text-align: center;
+
+  padding: 5px;
+
+}
+
+.loading {
+
+  background: url("../img/loading.svg") no-repeat center center !important; 
+
+}
+.col{
+
+  display: inline-block;
+
+  padding: 5px;
+
+}
+
+.lang-choice-container > a{
+
+  width   : 200px;
+
+  height  : 50px;   
+
+  position: relative;
+
+  z-index : 1;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  outline : none;
+
+  padding-bottom: 3px;
+  padding-left : 1%;
+  padding-right: 1%;
+
+}
+
+.selected:before , .lang-choice-container > a:hover:before {
+
+  content : "";
+  position: absolute;
+  left    : 22%;
+  bottom  : 0;
+  height  : 5px;
+  width   : 51%;
+  border-bottom: 3px solid red;
+
+}
+
+.pot-item{
+
+  width : 100%;
+
+  height: 200px;
+
+  position: relative;
+
+  background-size: cover;
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+  background-position: center;
+
+}
+
+.pot-name{
+
+  background: linear-gradient(rgba(255,0,0,0), rgba(0,0,0,1));
+
+  height: 50%;
+
+  width: 100%;
+
+  position: absolute; 
+
+  bottom: 0;
+
+  color: white;
+
+  line-height: 10em;
+
+  vertical-align: bottom;
+
+  font-weight: bold;
+
+}
+@media only screen and (min-width: 700px) {
+
+  .col {
+
+    width: 46%;
+
+  }
+
+
+
+  .content {
+
+    margin: 0 auto;
+
+    width: 70%;
+
+  }
+
+}
+
+@media only screen and (max-width: 1030px) {
+
+  .content {
+
+    margin: 0 auto;
+
+    width: 100%;
+
+  }
+
+}
+
+.loading {
+  width: 100%;
+  height: 200px;
+  background: url(img/loading.svg) 50% no-repeat;
+ 
+}
+
+
+@media only screen and (max-width: 700px) {
+
+  .col {
+
+    width: 97%;
+
+  }
+
+  .content {
+
+    width: 100%;
+
+  }
+
+}
+
+/*TODO*/
