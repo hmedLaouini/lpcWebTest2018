@@ -21,6 +21,7 @@ angular.module('LpcWebTest2018')
     function loadImageInView(){
       if(isAnyPartOfElementInViewport(elem[0])){
         var downloadingImage = new Image();
+        console.log("image")
         downloadingImage.src = scope.lpcLazyBackground;
         downloadingImage.onload = function() {
           //remove temporary loading class

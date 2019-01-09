@@ -14,7 +14,7 @@ html,body{
 
 .loading {
 
-  background: url("../img/loading.svg") no-repeat center center !important; 
+  background: url("../img/loading.svg") no-repeat center center !important;
 
 }
 .col{
@@ -67,11 +67,9 @@ html,body{
 
   position: relative;
 
-  background-size: cover;
+  background-size : cover;
 
   background-repeat: no-repeat;
-
-  background-size: cover;
 
   background-position: center;
 

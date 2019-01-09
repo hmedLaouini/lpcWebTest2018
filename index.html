@@ -22,10 +22,11 @@
                 <img src="app/img/it.png" alt="Italy">
               </a>
             </div>
-          
+            
             <h1>{{'main.pots_list' | lpcTranslate:locale}}</h1>
+            <input type="text" placeholder="Recherche" data-ng-model="search">
             <div class="row">
-              <div class="col" data-ng-repeat="pot in pots">
+              <div class="col" data-ng-repeat="pot in pots | lpcTranslateSearch : search :locale">
                   <div class="pot-item" data-lpc-lazy-background="pot.imageUrl" data-loading-class="loading">
                     <div class="pot-name">{{pot.name | lpcTranslate:locale}}</div>
                   </div>
@@ -42,5 +43,6 @@
         <script src="app/js/pots-controller.controller.js"></script>
         <script src="app/js/lpc-translate.filter.js"></script>
         <script src="app/js/app.run.js"></script>
+        <script src="app/js/lpc-translate-search.filter.js"></script>
     </body>
 </html>
